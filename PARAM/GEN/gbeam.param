@@ -4,26 +4,26 @@
 
 ; average beam positions:
 ; Use the Hall C EPICS BPM values in units of cm
-  gbeam_x  = +0.00
-  gbeam_xp = +0.00
-  gbeam_y  = +0.00
-  gbeam_yp = +0.00
+;  gbeam_x  = +0.00
+;  gbeam_xp = +0.00
+;  gbeam_y  = +0.00
+;  gbeam_yp = +0.00
 
 ; Add new variables for Hall C BPM A, B, and C, based on HARP calibration
 ; Updated  by Dave Gaskell
 ;
   gbpmxa_slope = -0.98
-  gbpmxa_off   = -0.05
+  gbpmxa_off   = -0.05+0.21
   gbpmxb_slope = -1.12
-  gbpmxb_off   = +0.08
+  gbpmxb_off   = +0.08+0.12
   gbpmxc_slope = -0.96
-  gbpmxc_off   = -0.89
+  gbpmxc_off   = -0.89-0.29
   gbpmya_slope = 0.97
-  gbpmya_off   = -0.20
+  gbpmya_off   = -0.20+0.36
   gbpmyb_slope = 1.17
-  gbpmyb_off   = 0.38
+  gbpmyb_off   = 0.38+0.36
   gbpmyc_slope = 0.87
-  gbpmyc_off   = 0.47
+  gbpmyc_off   = 0.47+0.31
 
 ;positions of BPMs relative to target (from DIMAD)
 ;gbpma_zpos = 370.82 ; cm
@@ -58,10 +58,31 @@ gfrxb_adcpercm = 147000
 gfrya_adcpercm = 155500
 gfryb_adcpercm = 157500
 
+; Raster constants determined for Winter 2017 run 1565
+;gfr_cal_mom  = 2.218
+;gfrxa_adc_zero_offset = 65200
+;gfrxb_adc_zero_offset = 67050
+;gfrya_adc_zero_offset = 67200
+;gfryb_adc_zero_offset = 65650
+;gfrxa_adcpercm = 67000.0
+;gfrxb_adcpercm = 62666.6
+;gfrya_adcpercm = 56333.3
+;gfryb_adcpercm = 56000
+
+; Raster constants determind for Jan 2018 3 pass
+;gfr_cal_mom  = 6.4
+;gfrxa_adc_zero_offset = (75733.+51938.)/2.;
+;gfrxb_adc_zero_offset = (79778.+57293.)/2.;
+;gfrya_adc_zero_offset = (77755.+57411.)/2.;
+;gfryb_adc_zero_offset = (71093.+52056.)/2.;
+;gfrxa_adcpercm = (75733.-51938.)/0.2;
+;gfrxb_adcpercm = (79778.-57293.)/0.2;
+;gfrya_adcpercm = (77755.-57411.)/0.2;
+;gfryb_adcpercm = (71093.-52056.)/0.2;
  
  
 ; positions of FR magnets relative to target
-  gfrx_dist  = 1375   ; cm
-  gfry_dist  = 1337   ; cm
+gfrx_dist  = 1375   ; cm
+gfry_dist  = 1337   ; cm
 
 

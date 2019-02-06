@@ -26,4 +26,5 @@ Reconstruct_master ALL_events_NO_EDTM
 Block: Physics
 #include "DEF-files/HMS/PRODUCTION/CUTS/hstackana_physics_cuts.def"
 #include "DEF-files/SHMS/PRODUCTION/CUTS/pstackana_physics_cuts.def"
-Physics_master ALL_events_NO_EDTM
+optics_cut P.gtr.dp>-20&&P.gtr.dp<20&&P.cal.etracknorm>0.8
+Physics_master ALL_events_NO_EDTM&&optics_cut

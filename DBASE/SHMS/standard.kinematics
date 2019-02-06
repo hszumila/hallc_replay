@@ -8,7 +8,7 @@
 # 1722 is last December commissioning run
 
 0-9999
-gpbeam = 2.221
+gpbeam = 2.22178
 gtargmass_amu=12.0107
 ppartmass = 0.00051099
 ptheta_lab = 25.02
@@ -199,20 +199,20 @@ ppcentral = 4.0
 
 
 1813-1814 
-gpbeam = 6.430
+gpbeam = 6.42765
 gtargmass_amu=12.0107
 ppartmass = 0.00051099
-ptheta_lab = 22.045
-ppcentral = 3.2
+ptheta_lab = 22.05
+ppcentral = 3.2*0.983
 
 #Run Plan: Large Ytar: HMS/SHMS Angel and position Matrix Optimization (01/15/18)
 
 1815-1823
-gpbeam = 6.430
+gpbeam = 6.42765
 gtargmass_amu= 12.0107
 ppartmass =  0.00051099
 ptheta_lab =30.065
-ppcentral = 2.0
+ppcentral = 2.0*0.983
 
 1824-1828
 gpbeam = 6.430
@@ -364,18 +364,18 @@ ptheta_lab =30.005
 ppcentral = 3.349
 
 2233-2234
-gpbeam = 6.430
+gpbeam = 6.42765
 gtargmass_amu= 12.0107
 ppartmass =  0.00051099
 ptheta_lab =22.0
-ppcentral = 3.2
+ppcentral = 3.2*0.983
 
 2235-2239
-gpbeam = 6.430
+gpbeam = 6.42765
 gtargmass_amu= 12.0107
 ppartmass =  0.00051099
-ptheta_lab =30.0
-ppcentral = 2
+ptheta_lab =30.02
+ppcentral = 2*0.983
 
 #2241 -2247 are junk runs on LH2
 2241-2247

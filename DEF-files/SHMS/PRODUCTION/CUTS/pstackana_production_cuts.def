@@ -13,7 +13,9 @@ Block: CoarseTracking
 CoarseTracking_master ALL_SHMS_NO_EDTM
 
 Block: CoarseReconstruct
-CoarseReconstruct_master ALL_SHMS_NO_EDTM
+cut_ngcer P.ngcer.npeSum>2.
+both_cut cut_ngcer&&ALL_SHMS_NO_EDTM
+CoarseReconstruct_master both_cut
 
 Block: Tracking
 Tracking_master  ALL_SHMS_NO_EDTM
@@ -24,4 +26,4 @@ Reconstruct_master ALL_SHMS_NO_EDTM
 
 Block: Physics
 #include "DEF-files/SHMS/PRODUCTION/CUTS/pstackana_physics_cuts.def"
-Physics_master ALL_SHMS_NO_EDTM
+Physics_master ALL_SHMS_NO_EDTM&&P.gtr.dp>-20&&P.gtr.dp<20&&P.cal.etracknorm>0.8
