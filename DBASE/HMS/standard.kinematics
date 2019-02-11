@@ -1647,7 +1647,6 @@ hpartmass = 0.00051099
 htheta_lab = -15.01
 hpcentral = 5.1
 
-
 2109
 gpbeam = 10.59
 gtargmass_amu =  1.00794
@@ -1655,10 +1654,9 @@ hpartmass = 0.00051099
 htheta_lab = -13.505
 hpcentral = 5.27
 
-
-4697
-gpbeam = 10.59
+2374
+gpbeam = 10.6
 gtargmass_amu =  1.00794
 hpartmass = 0.00051099
-htheta_lab = -13.505
-hpcentral = 5.27
+htheta_lab = -21.0
+hpcentral = 4.1

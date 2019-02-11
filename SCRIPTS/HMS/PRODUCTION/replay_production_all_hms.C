@@ -146,11 +146,11 @@ void replay_production_all_hms(Int_t RunNumber=0, Int_t MaxEvent=0) {
   // Define cuts file
   analyzer->SetCutFile("DEF-files/HMS/PRODUCTION/CUTS/hstackana_production_cuts.def");    // optional
   // File to record cuts accounting information for cuts
-  analyzer->SetSummaryFile(Form("REPORT_OUTPUT/HMS/PRODUCTION/summary_all_production_%d_%d.report", RunNumber, MaxEvent));    // optional
+  //  analyzer->SetSummaryFile(Form("REPORT_OUTPUT/HMS/PRODUCTION/summary_all_production_%d_%d.report", RunNumber, MaxEvent));    // optional
   // Start the actual analysis.
   analyzer->Process(run);
   // Create report file from template.
-  analyzer->PrintReport("TEMPLATES/HMS/PRODUCTION/hstackana_production.template",
-			Form("REPORT_OUTPUT/HMS/PRODUCTION/replay_hms_all_production_%d_%d.report", RunNumber, MaxEvent));
+  //analyzer->PrintReport("TEMPLATES/HMS/PRODUCTION/hstackana_production.template",
+  //			Form("REPORT_OUTPUT/HMS/PRODUCTION/replay_hms_all_production_%d_%d.report", RunNumber, MaxEvent));
 
 }

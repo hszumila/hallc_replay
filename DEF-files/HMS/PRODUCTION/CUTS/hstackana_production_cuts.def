@@ -11,7 +11,8 @@ Block: CoarseTracking
 CoarseTracking_master ALL_HMS_NO_EDTM
 
 Block: CoarseReconstruct
-CoarseReconstruct_master ALL_HMS_NO_EDTM
+cut_cer H.cer.npe>2.
+CoarseReconstruct_master ALL_HMS_NO_EDTM&&cut_cer
 
 Block: Tracking
 Tracking_master  ALL_HMS_NO_EDTM
@@ -22,4 +23,4 @@ Reconstruct_master ALL_HMS_NO_EDTM
 
 Block: Physics
 #include "DEF-files/HMS/PRODUCTION/CUTS/hstackana_physics_cuts.def"
-Physics_master ALL_HMS_NO_EDTM
+Physics_master ALL_HMS_NO_EDTM&&H.gtr.dp>-12&&H.gtr.dp<12
